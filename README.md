@@ -1,10 +1,37 @@
-# gulp-scss-starter
+# MoreУлыбка - Тестовое, верстка
 
-![License](https://img.shields.io/github/license/andreyalexeich/gulp-scss-starter)
-![GitHub stars](https://img.shields.io/github/stars/andreyalexeich/gulp-scss-starter.svg?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/andreyalexeich/gulp-scss-starter.svg?style=social)<br>
-<a href="https://qiwi.com/n/ANDREYALEXEICH"><img src="https://img.shields.io/badge/%D0%97%D0%B0%D0%B4%D0%BE%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BD%D0%B0%20%D0%BF%D0%B8%D0%B2%D0%BE-Qiwi-orange?style=for-the-badge&logo=qiwi"></a>
+## :heavy_check_mark: Требования:
 
+* Методология БЭМ
+* Предпроцессор SASS
+* Сборщик frontend (grunt, gulp, webpack на выбор)
+* Javascript
+* Fixed меню при скроле
+* Открытие каталога и переключение табов
+* Слайдер фото
+* переключение при клике на навигацию
+* Запись на прием
+* Открытие модального окна
+* ajax отправка формы и показ результата
+
+## :keyboard: Команды
+* ```yarn run lint:styles``` - проверить SCSS-файлы. Для VSCode необходимо установить [плагин](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint). Для WebStorm
+  или PHPStorm необходимо включить Stylelint в ```Languages & Frameworks - Style Sheets - Stylelint```
+* ```yarn run dev``` - запуск сервера для разработки проекта
+* ```yarn run build``` - собрать проект с оптимизацией без запуска сервера
+* ```yarn run build:views``` - собрать HTML-файлы
+* ```yarn run build:styles``` - скомпилировать SCSS-файлы
+* ```yarn run build:scripts``` - собрать JS-файлы
+* ```yarn run build:images``` - собрать изображения
+* ```yarn run build:webp``` - сконвертировать изображения в формат ```.webp```
+* ```yarn run build:sprites```- собрать спрайты
+* ```yarn run build:fonts``` - собрать шрифты
+* ```yarn run build:favicons``` - собрать фавиконки
+* ```yarn run build:gzip``` - собрать конфигурацию Apache
+* ```yarn run bem-m``` - добавить БЭМ-блок
+* ```yarn run lint:styles --fix``` - исправить ошибки в SCSS-файлах согласно настройкам Stylelint
+* ```yarn run lint:scripts``` - проверить JS-файлы
+* ```yarn run lint:scripts --fix``` - исправить ошибки в JS-файлах согласно настройкам ESLint
 
 ## :fire: Особенности
 * именование классов по [БЭМ](https://ru.bem.info/)
@@ -78,22 +105,3 @@ gulp-scss-starter
     * конфигурационный файл веб-сервера Apache с настройками [gzip](https://habr.com/ru/post/221849/) (сжатие без потерь): ```src/.htaccess```
 * Папка ```dist``` - папка, из которой запускается локальный сервер для разработки (при запуске ```yarn run dev```)
 * Папка ```gulp-tasks``` - папка с Gulp-тасками
-
-## :keyboard: Команды
-* ```yarn run lint:styles``` - проверить SCSS-файлы. Для VSCode необходимо установить [плагин](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint). Для WebStorm
-или PHPStorm необходимо включить Stylelint в ```Languages & Frameworks - Style Sheets - Stylelint```
-* ```yarn run dev``` - запуск сервера для разработки проекта
-* ```yarn run build``` - собрать проект с оптимизацией без запуска сервера
-* ```yarn run build:views``` - собрать HTML-файлы
-* ```yarn run build:styles``` - скомпилировать SCSS-файлы
-* ```yarn run build:scripts``` - собрать JS-файлы
-* ```yarn run build:images``` - собрать изображения
-* ```yarn run build:webp``` - сконвертировать изображения в формат ```.webp```
-* ```yarn run build:sprites```- собрать спрайты
-* ```yarn run build:fonts``` - собрать шрифты
-* ```yarn run build:favicons``` - собрать фавиконки
-* ```yarn run build:gzip``` - собрать конфигурацию Apache
-* ```yarn run bem-m``` - добавить БЭМ-блок
-* ```yarn run lint:styles --fix``` - исправить ошибки в SCSS-файлах согласно настройкам Stylelint
-* ```yarn run lint:scripts``` - проверить JS-файлы
-* ```yarn run lint:scripts --fix``` - исправить ошибки в JS-файлах согласно настройкам ESLint
