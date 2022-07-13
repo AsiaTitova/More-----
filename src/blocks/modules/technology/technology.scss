@@ -1,0 +1,124 @@
+.technology {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 56px;
+
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 0 40px;
+  }
+
+  &__title {
+    @include text(32px, 35px, 800);
+    width: 80%;
+    margin: 0;
+    color: $dark-hovered;
+  }
+
+  &__control-panel {
+    display: flex;
+    align-items: center;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    background: $light-default;
+    border-radius: 8px;
+    border: none;
+
+    &_next {
+      margin-left: 8px;
+    }
+
+    svg {
+      display: block;
+      width: 24px;
+      height: 24px;
+      fill: currentColor;
+      color: $primary-default;
+    }
+  }
+
+  &__link {
+    margin: 0 32px 0 0;
+  }
+
+  &__carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+    transition: margin-left 250ms;
+  }
+
+  &__item {
+    position: relative;
+    min-width: 338px;
+    width: 25%;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-right: 32px;
+    }
+
+    img {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 225px;
+      border-radius: 16px;
+    }
+
+    &:hover {
+      .technology__wrap {
+        background: $light-default;
+        border: 1px solid $light-default;
+      }
+
+      .technology__label {
+        color: $primary-hovered;
+      }
+    }
+  }
+
+  &__wrap {
+    width: 100%;
+    min-height: 236px;
+    padding: 24px;
+    border: 1px solid $light-hovered;
+    border-radius: 16px;
+    transition: all 0.5s ease;
+  }
+
+  &__label {
+    @include text(18px, 20px, 700);
+    margin: 0 0 16px;
+    color: $dark-hovered;
+    transition: all 0.5s ease;
+  }
+
+  &__content {
+    @include text(16px, 22px, 400);
+    @include textEllipsis(6);
+    margin: 0;
+    color: $dark-hovered;
+  }
+}

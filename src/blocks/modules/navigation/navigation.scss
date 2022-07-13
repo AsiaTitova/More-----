@@ -1,0 +1,12 @@
+.navigation {
+
+  &__item:not(:last-child) {
+    margin: 0 0 24px;
+  }
+
+  &__link {
+    @include text(21px, 23px, 700);
+    color: $white;
+    text-decoration: none;
+  }
+}

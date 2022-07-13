@@ -1,0 +1,197 @@
+.advantage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 56px 0 94px;
+
+  &__title {
+    @include text(32px, 35px, 800);
+    width: 80%;
+    margin: 0 0 40px;
+    color: $dark-hovered;
+  }
+  &__button {
+    width: 36px;
+    height: 36px;
+    background: $light-default;
+    border-radius: 8px;
+    border: none;
+
+    &_next {
+      margin-left: 8px;
+    }
+  }
+
+  &__list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+    transition: margin-left 250ms;
+  }
+
+  &__item {
+    position: relative;
+    min-width: 338px;
+    width: 25%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 16px;
+    padding: 24px;
+    transition: all 0.5s ease;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 40px;
+      bottom: 24px;
+      width: 56px;
+      height: 56px;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-position: 0 0;
+      z-index: 1;
+      transition: all 0.5s ease;
+    }
+
+    &_doctors {
+      &::before {
+        background-image: url("../img/doctors-fill.svg");
+      }
+
+      &:hover::before {
+        background-image: url("../img/doctors-fill.svg");
+      }
+    }
+
+    &_equip {
+      &::before {
+        background-image: url("../img/equip-fill.svg");
+      }
+
+      &:hover::before {
+        background-image: url("../img/equip-fill.svg");
+      }
+    }
+
+    &_sertif {
+      &::before {
+        background-image: url("../img/sertif-fill.svg");
+      }
+
+      &:hover::before {
+        background-image: url("../img/sertif-fill.svg");
+      }
+    }
+
+    &_sterility {
+      &::before {
+        background-image: url("../img/sterility-fill.svg");
+      }
+
+      &:hover::before {
+        background-image: url("../img/sterility-fill.svg");
+      }
+    }
+
+    &_parking {
+      &::before {
+        background-image: url("../img/parking-fill.svg");
+      }
+
+      &:hover::before {
+        background-image: url("../img/parking-fill.svg");
+      }
+    }
+
+    &_result {
+      &::before {
+        background-image: url("../img/result-fill.svg");
+      }
+
+      &:hover::before {
+        background-image: url("../img/result-fill.svg");
+      }
+    }
+
+    &_price {
+      &::before {
+        background-image: url("../img/price-fill.svg");;
+      }
+
+      &:hover::before {
+        background-image: url("../img/price-fill.svg");
+      }
+    }
+
+    &:hover {
+      background: $light-default;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 222px;
+        bottom: -14px;
+        width: 102px;
+        height: 102px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: 0 0;
+        z-index: 1;
+      }
+
+      .advantage__picture  {
+        background: $white;
+      }
+
+      .advantage__picture img {
+        left: 8px;
+        top: 8px;
+      }
+    }
+  }
+
+  &__carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__picture {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+    padding: 8px 12px;
+    border-radius: 16px;
+    background: transparent;
+    z-index: 2;
+    transition: all 0.5s ease;
+
+    img {
+      position: absolute;
+      display: block;
+      width: 56px;
+      height: 56px;
+      z-index: 2;
+      left: 0;
+      top: 0;
+      transition: all 0.5s ease;
+    }
+  }
+
+  &__label {
+    @include text(18px, 20px, 700);
+    position: relative;
+    max-width: 200px;
+    margin: 0 0 0 16px;
+    color: $dark-hovered;
+    z-index: 2;
+  }
+}

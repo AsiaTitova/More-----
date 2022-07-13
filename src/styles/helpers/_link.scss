@@ -1,0 +1,41 @@
+.link {
+  @include text(16px, 18px, 700);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  transition: all 0.3s ease;
+  color: $dark-hovered;
+  text-decoration: none;
+  outline: none;
+
+  &:hover {
+    color: $primary-default;
+  }
+
+  &:active {
+    color: $dark-hovered;
+
+    svg {
+      color: $primary-hovered;
+    }
+  }
+
+
+  &:disabled {
+    color: $light-pressed;
+
+    svg {
+      color: $light-pressed;
+    }
+  }
+
+  svg {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+    fill: currentColor;
+    color: $primary-default;
+  }
+}

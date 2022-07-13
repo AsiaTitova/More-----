@@ -1,0 +1,19 @@
+.promo {
+  padding: 56px 0 116px;
+
+  &__title {
+    @include text(52px, 57px, 800);
+    margin: 0 0 32px;
+    color: $white;
+  }
+
+  &__description {
+    @include text(21px, 25px, 300);
+    margin: 0 0 32px;
+    color: $white;
+  }
+
+  .tooltip {
+    margin: 0 0 16px;
+  }
+}

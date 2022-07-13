@@ -1,0 +1,37 @@
+.menu {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+
+  .navigation {
+    margin: 185px 0 0;
+  }
+
+  &__button {
+    width: 100%;
+    margin: auto 0 16px;
+    justify-self: flex-end;
+  }
+
+  &__social-list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+
+    svg {
+      display: block;
+      width: 24px;
+      height: 24px;
+      fill: currentColor;
+      color: $white;
+
+      path {
+        stroke: $white;
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.tooltip {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 8px 7px;
+  width: max-content;
+  height: 24px;
+  border-radius: 4px;
+
+  &_new {
+    background: $green;
+  }
+
+  &_stock {
+    background: $red;
+  }
+
+  &__label {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $white;
+  }
+}

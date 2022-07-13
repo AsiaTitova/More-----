@@ -1,0 +1,20 @@
+.tags {
+  display: flex;
+  align-items: center;
+
+  &__tag {
+    @include text(11px, 11px, 700);
+    padding: 6px 8px 7px;
+    width: max-content;
+    height: 24px;
+    background: $secondary-default;
+    border-radius: 4px;
+    color: $deep-blue;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+}

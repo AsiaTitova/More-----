@@ -1,0 +1,18 @@
+.range {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__item:not(:last-child) {
+    margin-right: 4px;
+  }
+
+  svg {
+    display: block;
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+    color: $primary-default;
+  }
+}
