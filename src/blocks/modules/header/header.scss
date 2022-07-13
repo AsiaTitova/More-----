@@ -1,0 +1,79 @@
+.header {
+  width: 100%;
+  padding: 0 56px;
+  background-image: url("../img/promo-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 600px;
+  background-position: 50% 0;
+
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0;
+    border-bottom: 1px solid #FFFFFF;
+  }
+
+  &__list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__icon {
+    display: block;
+    width: 26px;
+    height: 26px;
+    margin-right: 16px;
+    fill: currentColor;
+    color: #00BDD6;
+  }
+
+  &__label {
+    @include text(12px, 12px, 700);
+    margin: 0 0 4px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $white;
+  }
+
+  &__content {
+    @include text(16px, 18px, 700);
+    margin: 0;
+    color: $white;
+  }
+
+  &__tel {
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 700;
+    margin: 0;
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+
+  &__visually-impaired {
+    @include text(16px, 18px, 700);
+    display: flex;
+    align-items: center;
+    padding: 0;
+    color: #FFFFFF;
+    background: transparent;
+    border: none;
+  }
+
+  &__button {
+    min-width: max-content;
+    margin-left: 24px;
+  }
+}

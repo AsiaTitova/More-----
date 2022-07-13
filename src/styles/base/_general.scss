@@ -1,0 +1,83 @@
+html  {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  margin: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  cursor: default;
+  font-family: "Gilroy", "Arial", sans-serif;
+}
+
+.body {
+  padding-left: 360px;
+
+  &__container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 360px;
+    padding: 24px 56px;
+    background: $primary-pressed;
+    background-image: url("../img/menu-bg.svg");
+    background-repeat: no-repeat;
+    background-size: 693px 716px;
+    background-position: 50% 64px;
+  }
+
+  &__main {
+    display: block;
+    width: 100%;
+  }
+}
+
+

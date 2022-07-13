@@ -1,0 +1,37 @@
+<header class="header">
+    <div class="header__head">
+        <ul class="header__list">
+            <li class="header__item">
+                <svg class="header__icon">
+                    <use xlink:href="img/sprites/sprite.svg#map-pin"></use>
+                </svg>
+                <div class="header__wrap">
+                    <p class="header__label">Адрес</p>
+                    <p class="header__content">Ялта, ул.Изобильная 10</p>
+                </div>
+            </li>
+            <li class="header__item">
+                <svg class="header__icon">
+                    <use xlink:href="img/sprites/sprite.svg#clock"></use>
+                </svg>
+                <div class="header__wrap">
+                    <p class="header__label">Часы работы</p>
+                    <p class="header__content">Пн-Вс с 08:00-20:00</p>
+                </div>
+            </li>
+            <li class="header__item">
+                <a class="header__tel" href="tel:+79786505050" aria-label="Позвонить в клинику">+7 978 650-50-50</a>
+            </li>
+            <li class="header__item">
+                <button class="header__visually-impaired" type="button" aria-label="Переключиться на режим для слабовидящих">
+                    <svg class="header__icon">
+                        <use xlink:href="img/sprites/sprite.svg#glasses"></use>
+                    </svg>
+                    <span>Для слабовидящих</span>
+                </button>
+            </li>
+        </ul>
+        <button class="header__button button" type="button" aria-label="Записаться на прием">Запись на прием</button>
+    </div>
+    @@include("../promo/promo.html")
+</header>
