@@ -22,6 +22,7 @@
   * [Bem Tools](https://www.npmjs.com/package/bem-tools-core): ```npm i -g bem-tools-core```
 * введите ```yarn set version berry```
 * скачайте необходимые зависимости: ```yarn```
+* запустить json-server для работы с формой: ```yarn run fake-json```
 * чтобы начать работу, введите команду: ```yarn run dev``` (режим разработки)
 * чтобы собрать проект, введите команду ```yarn run build``` (режим сборки)
 
