@@ -51,9 +51,11 @@ body {
 }
 
 .body {
+  position: relative;
   padding-left: 360px;
 
   &__container {
+    position: relative;
     width: 100%;
     display: flex;
     align-items: center;
@@ -72,11 +74,13 @@ body {
     background-repeat: no-repeat;
     background-size: 693px 716px;
     background-position: 50% 64px;
+    z-index: 2;
   }
 
   &__main {
     display: block;
     width: 100%;
+    z-index: 1;
   }
 }
 

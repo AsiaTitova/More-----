@@ -1,0 +1,90 @@
+.appointment-success {
+  display: none;
+
+  &_open {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+  }
+
+  &__modal {
+    position: relative;
+    width: 448px;
+    background: $light-default;
+    box-shadow: 0 0 0 8px rgba(0, 189, 214, 0.2);
+    border-radius: 16px;
+    padding: 32px;
+  }
+
+  &__button-cross {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    background: $white;
+    border-radius: 6px;
+    border: 1px solid $primary-default;
+
+    &:hover svg {
+      color: $white;
+    }
+
+    svg {
+      display: block;
+      width: 36px;
+      height: 36px;
+      fill: currentColor;
+      color: $primary-default;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 24px;
+    background: $white;
+    box-shadow: 0 8px 24px #E0EEF8;
+    border-radius: 16px;
+
+    svg {
+      display: block;
+      width: 72px;
+      height: 72px;
+      fill: currentColor;
+      color: $primary-default;
+    }
+  }
+
+  &__title {
+    @include text(21px, 23px, 700);
+    margin: 0 auto 8px;
+    text-align: center;
+    color: $dark-hovered;
+  }
+
+  &__content {
+    @include text(16px, 22px, 400);
+    margin: 0 auto 8px;
+    text-align: center;
+    color: $deep-blue;
+  }
+
+  &__button {
+    margin: 24px 0 0;
+    width: 100%;
+  }
+}

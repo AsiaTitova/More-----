@@ -1,8 +1,10 @@
 @import "modules/header/header";
 @import "modules/menu/menu";
+@import "modules/menu/service-catalog/service-catalog";
 @import "modules/navigation/navigation";
 @import "modules/tooltips/tooltip";
 @import "modules/promo/promo";
+@import "modules/promo/dots";
 @import "modules/advantage/advantage";
 @import "modules/services/services";
 @import "modules/technology/technology";
@@ -10,3 +12,6 @@
 @import "modules/reviews/range";
 @import "modules/reviews/tags";
 @import "modules/reviews/reviews";
+@import "modules/making-appointment/making-appointment";
+@import "modules/making-appointment/appointment-success";
+@import "modules/making-appointment/form";

@@ -1,0 +1,25 @@
+.dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 8px;
+
+
+  &__dot-item {
+    &:not(:last-child) {
+      margin-right: 4px;
+    }
+  }
+
+  &__dot {
+    width: 16px;
+    height: 16px;
+    background: transparent;
+    border: 2px solid $white;
+    border-radius: 50%;
+
+    &_active {
+      background: $white;
+    }
+  }
+}

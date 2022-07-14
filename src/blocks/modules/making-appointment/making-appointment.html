@@ -1,0 +1,40 @@
+<div class="making-appointment">
+    <div class="making-appointment__modal">
+        <div class="making-appointment__head">
+            <h3 class="making-appointment__title">Запись на прием</h3>
+            <button class="making-appointment__button-cross button button_white" type="button">
+                <svg>
+                    <use xlink:href="img/sprites/sprite.svg#close"></use>
+                </svg>
+            </button>
+        </div>
+        <form class="making-appointment__form form" method="post" enctype="application/x-www-form-urlencoded">
+            <div class="form__wrap form__wrap_name form__wrap_empty">
+                <label class="form__label" for="name">
+                    <svg>
+                        <use xlink:href="img/sprites/sprite.svg#user"></use>
+                    </svg>
+                </label>
+                <input type="text" class="form__input form__input_name" id="name" name="name" maxlength="50"  placeholder="Ваше имя" required>
+            </div>
+            <div class="form__wrap form__wrap_tel form__wrap_empty">
+                <label class="form__label" for="tel">
+                    <svg>
+                        <use xlink:href="img/sprites/sprite.svg#smartphone"></use>
+                    </svg>
+                </label>
+                <input type="tel" class="form__input form__input_tel" id="tel" name="tel" placeholder="Ваш телефон" required>
+            </div>
+            <div class="form__wrap form__wrap_check">
+                <input class="form__check visually-hidden" type="checkbox" id="check" name="tel" required>
+                <label class="form__label-check" for="check">
+                    <svg>
+                        <use xlink:href="img/sprites/sprite.svg#check"></use>
+                    </svg>
+                </label>
+                <label class="form__approve" for="check">Я согласен(на) на обработку данных</label>
+            </div>
+            <button class="form__button button" type="button">Отправить заявку</button>
+        </form>
+    </div>
+</div>

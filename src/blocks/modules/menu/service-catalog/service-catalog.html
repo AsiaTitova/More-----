@@ -1,0 +1,47 @@
+<div class="service-catalog" id="service-catalog">
+    <div class="service-catalog__head">
+        <h2 class="service-catalog__title">
+            Услуги
+        </h2>
+        <button class="service-catalog__button-cross button button_white" type="button">
+            <svg>
+                <use xlink:href="img/sprites/sprite.svg#close"></use>
+            </svg>
+        </button>
+    </div>
+    <ul class="service-catalog__list">
+        <li class="service-catalog__item">
+            <a class="service-catalog__link link" href="#">
+                <span>Консультация и диагностика</span>
+            </a>
+        </li>
+        <li class="service-catalog__item">
+            <a class="service-catalog__link link" href="#">
+                <span>Лечение зубов</span>
+            </a>
+            @@include("../../tooltips/tooltip-stock/tooltip-stock.html")
+        </li>
+        <li class="service-catalog__item">
+            <a class="service-catalog__link link" href="#">
+                <span>Профилактика и гигиена</span>
+            </a>
+        </li>
+        <li class="service-catalog__item">
+            <a class="service-catalog__link link" href="#">
+                <span>Протезирование</span>
+            </a>
+            @@include("../../tooltips/tooltip-new/tooltip-new.html")
+        </li>
+        <li class="service-catalog__item">
+            <a class="service-catalog__link link" href="#">
+                <span>Хирургия и пародонтология</span>
+            </a>
+        </li>
+        <li class="service-catalog__item">
+            <a class="service-catalog__link link" href="#">
+                <span>Имплантация</span>
+            </a>
+            @@include("../../tooltips/tooltip-new/tooltip-new.html")
+        </li>
+    </ul>
+</div>

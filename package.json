@@ -8,6 +8,7 @@
         "url": "https://github.com/andreyalexeich/gulp-scss-starter.git"
     },
     "scripts": {
+        "fake-json": "json-server ./src/assets/DataBase.json --watch --port 3000",
         "dev": "gulp",
         "build": "gulp prod --production",
         "build:views": "gulp views --production",
@@ -31,10 +32,12 @@
         "@babel/eslint-parser": "^7.17.0",
         "@babel/preset-env": "^7.16.11",
         "@babel/register": "^7.17.0",
+        "axios": "^0.21.x",
         "babel-loader": "^8.2.3",
         "bem-tools-core": "bem-tools/bem-tools-core",
         "bem-tools-create": "bem-tools/bem-tools-create",
         "browser-sync": "^2.27.7",
+        "core-js": "^3.8.3",
         "del": "^6.0.0",
         "eslint": "^8.11.0",
         "gulp": "^4.0.2",
@@ -62,6 +65,7 @@
         "imagemin-pngquant": "^9.0.0",
         "imagemin-webp": "^6.0.0",
         "imagemin-zopfli": "^7.0.0",
+        "json-server": "^0.16.2",
         "lint-staged": "^12.3.5",
         "postcss": "^8.4.8",
         "postcss-scss": "^4.0.3",

@@ -1,0 +1,61 @@
+.making-appointment {
+  display: none;
+
+  &_open {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(20, 34, 41, 0.8);
+    z-index: 4;
+  }
+
+  &__modal {
+    width: 448px;
+    background: $light-default;
+    box-shadow: 0 0 0 8px rgba(0, 189, 214, 0.2);
+    border-radius: 16px;
+    padding: 16px;
+  }
+
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 24px;
+  }
+
+  &__button-cross {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    background: $white;
+    border-radius: 6px;
+    border: 1px solid $primary-default;
+
+    &:hover svg {
+      color: $white;
+    }
+
+    svg {
+      display: block;
+      width: 36px;
+      height: 36px;
+      fill: currentColor;
+      color: $primary-default;
+    }
+  }
+
+  &__title {
+    @include text(18px, 20px, 700);
+    margin: 0;
+    color: $dark-hovered;
+  }
+}

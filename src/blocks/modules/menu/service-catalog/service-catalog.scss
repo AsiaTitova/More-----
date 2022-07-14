@@ -1,0 +1,92 @@
+.service-catalog {
+  display: none;
+
+  &_open {
+    width: 448px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 360px;
+    padding: 32px;
+    border-radius: 0 16px 16px 0;
+    background: $white;
+    z-index: 3;
+  }
+
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 0 30px;
+  }
+
+  &__title {
+    @include text(21px, 23px, 700);
+    width: 80%;
+    margin: 0;
+  }
+
+  &__button-cross {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    background: $white;
+    border-radius: 6px;
+    border: 1px solid $primary-default;
+
+    &:hover svg {
+      color: $white;
+    }
+
+    svg {
+      display: block;
+      width: 36px;
+      height: 36px;
+      fill: currentColor;
+      color: $primary-default;
+    }
+  }
+
+  &__list {
+    width: 100%;
+  }
+
+  &__item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 0 24px;
+  }
+
+  &__link {
+    position: relative;
+    display: block;
+    margin-right: 8px;
+    padding-bottom: 3px;
+    text-decoration: underline;
+    text-decoration-color: $primary-default;
+    text-decoration-style: solid;
+
+    &:hover {
+      text-decoration-color: $primary-default;
+      text-decoration-style: wavy;
+    }
+
+    &:active {
+      text-decoration-color: $primary-pressed;
+      text-decoration-style: wavy;
+    }
+
+    &:disabled {
+      text-decoration-color: $light-pressed;
+      text-decoration-style: wavy;
+    }
+  }
+}

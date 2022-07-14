@@ -3,3 +3,7 @@ import "%modules%/advantage/advantage";
 import "%modules%/reviews/reviews";
 import "%modules%/services/services";
 import "%modules%/technology/technology";
+import "%modules%/menu/menu";
+import "%modules%/menu/service-catalog/service-catalog";
+import "%modules%/making-appointment/making-appointment";
+import "%modules%/promo/promo";

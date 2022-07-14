@@ -1,6 +1,46 @@
 <div class="promo">
-    @@include("../tooltips/tooltip-new/tooltip-new.html")
-    <h1 class="promo__title">Имплантация зубов</br> теперь доступна каждому</h1>
-    <p class="promo__description">Установка имплантов происходит непосредственно после удаления зуба, поэтому исключается необходимость</br> оперативного вмешательства и препарирования кости.</p>
-    <button class="promo__button button button_transparent-white" type="button">Подробнее</button>
+    <div class="promo__slider" id="promo-slider">
+        <ul class="promo__list">
+            <li class="promo__item">
+                @@include("../tooltips/tooltip-new/tooltip-new.html")
+                <h1 class="promo__title">Имплантация зубов</br> теперь доступна каждому</h1>
+                <p class="promo__description">Установка имплантов происходит непосредственно после удаления зуба, поэтому исключается необходимость</br> оперативного вмешательства и препарирования кости.</p>
+                <button class="promo__button button button_transparent-white" type="button">Подробнее</button>
+            </li>
+            <li class="promo__item">
+                <h1 class="promo__title">Новое оборудования</h1>
+                <p class="promo__description">Использование в клинике «Море Улыбок» ультрасовременных дентальных микроскопов</br> создает уникальные возможности для спасения даже «безнадежных» зубов.</p>
+                <button class="promo__button button button_transparent-white" type="button">Подробнее</button>
+            </li>
+            <li class="promo__item">
+                @@include("../tooltips/tooltip-stock/tooltip-stock.html")
+                <h1 class="promo__title">«Море Улыбок» — клиника для всей семьи</h1>
+                <p class="promo__description">«Море Улыбок» — доступные цены.</br> Проверенные специалисты, онлайн запись.</p>
+                <button class="promo__button button button_transparent-white" type="button">Подробнее</button>
+            </li>
+        </ul>
+    </div>
+    <div class="promo__control-panel">
+        <button class="promo__control-button promo__control-button_prev" type="button">
+            <svg>
+                <use xlink:href="img/sprites/sprite.svg#chevL"></use>
+            </svg>
+        </button>
+        <ul class="promo__dots dots">
+            <li class="dots__dot-item">
+                <button class="dots__dot dots__dot_one dots__dot_active" id="0" type="button"></button>
+            </li>
+            <li class="dots__dot-item">
+                <button class="dots__dot dots__dot_two" id="1" type="button"></button>
+            </li>
+            <li class="dots__dot-item">
+                <button class="dots__dot dots__dot_three" id="2" type="button"></button>
+            </li>
+        </ul>
+        <button class="promo__control-button promo__control-button_next" type="button">
+            <svg>
+                <use xlink:href="img/sprites/sprite.svg#chevR"></use>
+            </svg>
+        </button>
+    </div>
 </div>
