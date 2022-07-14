@@ -8,5 +8,11 @@
     @include text(21px, 23px, 700);
     color: $white;
     text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: $secondary-default;
+      text-decoration-style: wavy;
+    }
   }
 }
